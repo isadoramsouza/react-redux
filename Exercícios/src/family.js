@@ -1,9 +1,9 @@
 import React from 'react'
-import ChildrenWithProps from '../utils/reactUtils' 
+import {childrenWithProps} from './utils/reactUtils.js' 
 
 export default props => (
     <div>
         <h1>Família</h1>
-        {}
+        {childrenWithProps(props.children, props)}
     </div>
 )
