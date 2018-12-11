@@ -4,7 +4,7 @@ export default props=>(
     <nav className="navbar navbar-dark bg-dark">
         <div className='container'>
             <div className='navbar-header'>
-                <a className='navbar-brand'  href='#/todos'>
+                <a className='navbar-brand'  href='#'>
                     <i className='fa fa-calendar-check-o'></i> TodoApp
                 </a>
             </div>
