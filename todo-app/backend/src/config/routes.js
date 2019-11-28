@@ -2,11 +2,11 @@ const express = require('express')
 
 module.exports = function(server) {
 
-    //API Routrs
+    // API Routes
     const router = express.Router()
     server.use('/api', router)
 
-    //Todo Routes
+    // TODO Routes
     const todoService = require('../api/todo/todoService')
     todoService.register(router, '/todos')
 }
