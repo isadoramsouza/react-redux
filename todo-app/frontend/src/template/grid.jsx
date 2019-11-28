@@ -1,9 +1,8 @@
 import React, { Component } from "react";
-import { number } from "prop-types";
 
-export default class Todo extends Component {
+export default class Grid extends Component {
   toCssClasses(numbers) {
-    const cols = numbers ? number.split(" ") : [];
+    const cols = numbers ? numbers.split(" ") : [];
     let classes = "";
 
     if (cols[0]) classes += `col-xs-${cols[0]}`;
@@ -15,7 +14,7 @@ export default class Todo extends Component {
   }
 
   render() {
-    const gridClasses = this.toCssClasses(this.propscols || 12);
+    const gridClasses = this.toCssClasses(this.props.cols || 12);
     return <div className={gridClasses}>{this.props.children}</div>;
   }
 }

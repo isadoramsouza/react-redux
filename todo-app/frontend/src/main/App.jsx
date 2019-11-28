@@ -5,7 +5,7 @@ import Menu from "../template/menu";
 import Routes from "./routes";
 function App() {
   return (
-    <div className="App">
+    <div className="container">
       <Menu />
       <Routes />
     </div>
