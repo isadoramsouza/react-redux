@@ -1,15 +1,14 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "font-awesome/css/font-awesome.min.css";
-import React from "react";
-import Menu from "../template/menu";
-import Routes from "./routes";
-function App() {
-  return (
-    <div className="container">
-      <Menu />
-      <Routes />
-    </div>
-  );
-}
+import "../template/custom.css";
 
-export default App;
+import React from "react";
+import Routes from "./routes";
+import Menu from "../template/menu";
+
+export default App => (
+  <div className="container">
+    <Menu />
+    <Routes />
+  </div>
+);
